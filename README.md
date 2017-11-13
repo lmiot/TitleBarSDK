@@ -14,9 +14,10 @@
 
 
 ## 二.其次在dependencies中添加：
-    dependencies {
-     compile 'com.github.lmiot:TitleBarSDK:1.0'
-    }
+  	dependencies {
+  	        compile 'com.github.lmiot:TitleBarSDK:1.0'
+  	}
+
 
 
 ## 三.XML中：
