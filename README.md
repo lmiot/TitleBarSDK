@@ -50,7 +50,7 @@ dependencies {
       public void showTvMenu(Boolean  showTvMenu) //显示菜单（文字）
       public void showIvMenu(Boolean  showImgMenu) //显示菜单（图片）
 
-## 六.Java中监听按钮：返回，标题，菜单
+## 六.点击监听：
 
      lmiotTitleBar.setOnItemClickListener(new LmiotTitleBar.onItemClickListener() {
                @Override
