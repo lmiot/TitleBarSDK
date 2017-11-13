@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TibleBarLibrary</string>
+    <string name="lmiot_title">标题</string>
+    <string name="lmiot_menu">菜单</string>
+</resources>

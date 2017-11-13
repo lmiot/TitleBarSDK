@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TitleBarSDK</string>
+    <string name="title">测试标题</string>
+</resources>

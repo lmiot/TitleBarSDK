@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="LmiotTitleBar">
+    <attr name="iv_back" format="reference"/>
+    <attr name="iv_menu" format="reference"/>
+    <attr name="tv_title" format="string"/>
+    <attr name="tv_menu" format="string"/>
+    <attr name="show_tv_menu" format="boolean"/>
+    <attr name="show_iv_menu" format="boolean"/>
+    <attr name="titlebar_bg" format="color"/>
+    <attr name="text_color_title" format="color"/>
+    <attr name="text_color_menu" format="color"/>
+
+</declare-styleable>
+</resources>
