@@ -13,16 +13,13 @@
     }
 
 
-
 ## 二.其次在dependencies中添加：
-<pre><code>
-dependencies {
-    compile 'com.github.lmiot:TitleBarSDK:1.0'
-}
-</code></pre>
+    dependencies {
+     compile 'com.github.lmiot:TitleBarSDK:1.0'
+    }
 
 
-## 四.XML中：
+## 三.XML中：
     <com.lmiot.tiblebarlibrary.LmiotTitleBar
         android:id="@+id/id_lmiot_title_bar"
         android:layout_width="match_parent"
@@ -39,7 +36,7 @@ dependencies {
         />
 
 
-## 五.对外提供的方法：
+## 四.对外提供的方法：
       public void setImgBack(int resID) //设置返回图片
       public void setImgMenu(int resID)//设置菜单图片
       public void setTitle(String tvTitle) //设置标题
@@ -50,7 +47,7 @@ dependencies {
       public void showTvMenu(Boolean  showTvMenu) //显示菜单（文字）
       public void showIvMenu(Boolean  showImgMenu) //显示菜单（图片）
 
-## 六.点击监听：
+## 五.点击监听：
 
      lmiotTitleBar.setOnItemClickListener(new LmiotTitleBar.onItemClickListener() {
                @Override
@@ -75,5 +72,5 @@ dependencies {
 
 
 
-## 七.参考效果图：
+## 六.参考效果图：
 ![](https://github.com/lmiot/TitleBarSDK/blob/master/img/img.png)
