@@ -5,12 +5,12 @@
 
 ## 一.首先在项目的gradle中引用：
 
-    allprojects {
-    repositories {
-        jcenter()
-        maven { url 'https://jitpack.io' } //此处插入 
-        }
-    }
+   	allprojects {
+   		repositories {
+   			...
+   			maven { url 'https://jitpack.io' }
+   		}
+   	}
 
 
 ## 二.其次在dependencies中添加：
