@@ -75,5 +75,5 @@ dependencies {
 
 
 
-## 六.参考效果图：
-![](https://github.com/alijiahua/Image/blob/master/circleCorlorBg.png)
+## 七.参考效果图：
+![](https://github.com/lmiot/TitleBarSDK/blob/master/img/img.png)
