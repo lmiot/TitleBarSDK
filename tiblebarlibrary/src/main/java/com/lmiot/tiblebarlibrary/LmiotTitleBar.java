@@ -22,6 +22,7 @@ public class LmiotTitleBar extends RelativeLayout {
     private TextView mTitle;
     private TextView mMenu;
     private RelativeLayout mMain;
+    private View mLine;
 
     public void setOnItemClickListener(LmiotTitleBar.onItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
@@ -47,22 +48,25 @@ public class LmiotTitleBar extends RelativeLayout {
         String tvMenu = attributes.getString(R.styleable.LmiotTitleBar_tv_menu);
         boolean showImgMenu = attributes.getBoolean(R.styleable.LmiotTitleBar_show_iv_menu, false);
         boolean showTvMenu = attributes.getBoolean(R.styleable.LmiotTitleBar_show_tv_menu, false);
+        boolean showLine = attributes.getBoolean(R.styleable.LmiotTitleBar_show_line, false);
         int tibleBg = attributes.getColor(R.styleable.LmiotTitleBar_titlebar_bg, colorAccent);
         int titleColor = attributes.getColor(R.styleable.LmiotTitleBar_text_color_title, white);
         int menuColor = attributes.getColor(R.styleable.LmiotTitleBar_text_color_menu, white);
 
         View inflate = LayoutInflater.from(context).inflate(R.layout.title_bar_layout, this, true);
+        mLine = inflate.findViewById(R.id.id_line);
 
         mBack = inflate.findViewById(R.id.btn_back);
         mIv_menu = inflate.findViewById(R.id.iv_menu);
         mTitle = inflate.findViewById(R.id.tv_title);
         mMenu = inflate.findViewById(R.id.tv_menu);
         mMain = inflate.findViewById(R.id.id_main);
-
         mBack.setImageResource(imgBack);
         mIv_menu.setImageResource(imgMenu);
         mTitle.setText(tvTitle);
         mMenu.setText(tvMenu);
+
+        mLine.setVisibility(showLine ? VISIBLE : GONE);
         mIv_menu.setVisibility(showImgMenu ? VISIBLE : GONE);
         mMenu.setVisibility(showTvMenu ? VISIBLE : GONE);
         mMain.setBackgroundColor(tibleBg);
@@ -193,6 +197,13 @@ public class LmiotTitleBar extends RelativeLayout {
      */
     public void showIvMenu(Boolean  showImgMenu) {
         mIv_menu.setVisibility(showImgMenu ? VISIBLE : GONE);
+    }
+    /**
+     * 显示竖线
+     * @param showLine
+     */
+    public void showLine(Boolean  showLine) {
+        mLine.setVisibility(showLine ? VISIBLE : GONE);
     }
 
 

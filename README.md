@@ -34,6 +34,7 @@
         app:titlebar_bg="@color/colorAccent"
         app:text_color_title="@color/white"
         app:text_color_menu="@color/white"
+        app:show_line="true"
         />
 
 
@@ -47,6 +48,8 @@
       public void setMenuColor(int menuColor) //设置菜单颜色
       public void showTvMenu(Boolean  showTvMenu) //显示菜单（文字）
       public void showIvMenu(Boolean  showImgMenu) //显示菜单（图片）
+      public void showLine(Boolean  showLine) //显示竖线
+
 
 ## 五.点击监听：
 
