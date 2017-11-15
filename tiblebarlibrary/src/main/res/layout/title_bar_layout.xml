@@ -18,20 +18,21 @@
 
     <ImageView
         android:id="@+id/btn_back"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:contentDescription="@null"
         android:padding="8dp"
         android:src="@drawable/title_back"
         android:background="@drawable/title_bar_bg"
+        android:layout_margin="5dp"
         />
 
     <View
         android:id="@+id/id_line"
         android:layout_width="1px"
         android:layout_height="match_parent"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
         android:background="#50FFFFFF" />
     </LinearLayout>
 
@@ -73,13 +74,14 @@
 
         <ImageView
             android:id="@+id/iv_menu"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:contentDescription="@null"
             android:padding="8dp"
             android:src="@drawable/title_menu"
             android:background="@drawable/title_bar_bg"
-            android:visibility="gone"
+            android:visibility="visible"
+            android:layout_margin="5dp"
             />
 
     </RelativeLayout>
