@@ -46,7 +46,7 @@ public class LmiotTitleBar extends RelativeLayout {
         int imgMenu = attributes.getResourceId(R.styleable.LmiotTitleBar_iv_menu, R.drawable.title_menu);
         String tvTitle = attributes.getString(R.styleable.LmiotTitleBar_tv_title);
         String tvMenu = attributes.getString(R.styleable.LmiotTitleBar_tv_menu);
-        boolean showImgBack = attributes.getBoolean(R.styleable.LmiotTitleBar_show_iv_back, false);
+        boolean showImgBack = attributes.getBoolean(R.styleable.LmiotTitleBar_show_iv_back, true);
         boolean showImgMenu = attributes.getBoolean(R.styleable.LmiotTitleBar_show_iv_menu, false);
         boolean showTvMenu = attributes.getBoolean(R.styleable.LmiotTitleBar_show_tv_menu, false);
         boolean showLine = attributes.getBoolean(R.styleable.LmiotTitleBar_show_line, false);
