@@ -1,5 +1,8 @@
 package com.lmiot.titlebarsdk;
 
+import android.graphics.Color;
+import android.os.Looper;
+import android.os.MessageQueue;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,6 +43,43 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        lmiotTitleBar.setBg(Color.TRANSPARENT);
+        lmiotTitleBar.setTitleColor(Color.BLACK);
+        StatusBarUtil.darkMode(this,Color.GREEN,0.5f);
+        StatusBarUtil.setMargin(this,lmiotTitleBar);
+        SetTitleColor();
+
+
+    }
+
+
+    /**
+     * 改变标题栏颜色
+     */
+    private void SetTitleColor() {
+        Looper.myQueue().addIdleHandler(new MessageQueue.IdleHandler() {
+            @Override
+            public boolean queueIdle() {
+                if (true) {
+                    initStatusBar();
+                    getWindow().getDecorView().addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+                        @Override
+                        public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+                            initStatusBar();
+                        }
+                    });
+                }       //只走一次
+                return false;
+            }
+        });
+    }
+
+    private void initStatusBar() {
+        int identifier = getResources().getIdentifier("statusBarBackground", "id", "android");
+        View  StatusBarView = getWindow().findViewById(identifier);
+        if (StatusBarView != null) {
+            StatusBarView.setBackgroundResource(R.drawable.title_color); //颜色资源ID
+        }
 
     }
 }

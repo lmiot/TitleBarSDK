@@ -5,11 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lmiot.titlebarsdk.MainActivity">
+    tools:context="com.lmiot.titlebarsdk.MainActivity"
+    android:background="@drawable/bag"
+    >
     <com.lmiot.tiblebarlibrary.LmiotTitleBar
         android:id="@+id/id_lmiot_title_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         app:tv_title="标题"
         app:tv_menu="菜单"
         app:show_iv_menu="true"

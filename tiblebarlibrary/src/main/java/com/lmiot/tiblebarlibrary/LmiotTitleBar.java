@@ -46,6 +46,7 @@ public class LmiotTitleBar extends RelativeLayout {
         int imgMenu = attributes.getResourceId(R.styleable.LmiotTitleBar_iv_menu, R.drawable.title_menu);
         String tvTitle = attributes.getString(R.styleable.LmiotTitleBar_tv_title);
         String tvMenu = attributes.getString(R.styleable.LmiotTitleBar_tv_menu);
+        boolean showImgBack = attributes.getBoolean(R.styleable.LmiotTitleBar_show_iv_back, false);
         boolean showImgMenu = attributes.getBoolean(R.styleable.LmiotTitleBar_show_iv_menu, false);
         boolean showTvMenu = attributes.getBoolean(R.styleable.LmiotTitleBar_show_tv_menu, false);
         boolean showLine = attributes.getBoolean(R.styleable.LmiotTitleBar_show_line, false);
@@ -66,6 +67,7 @@ public class LmiotTitleBar extends RelativeLayout {
         mTitle.setText(tvTitle);
         mMenu.setText(tvMenu);
 
+        mBack.setVisibility(showImgBack ? VISIBLE : GONE);
         mLine.setVisibility(showLine ? VISIBLE : GONE);
         mIv_menu.setVisibility(showImgMenu ? VISIBLE : GONE);
         mMenu.setVisibility(showTvMenu ? VISIBLE : GONE);
@@ -204,6 +206,13 @@ public class LmiotTitleBar extends RelativeLayout {
      */
     public void showLine(Boolean  showLine) {
         mLine.setVisibility(showLine ? VISIBLE : GONE);
+    }
+    /**
+     * 显示返回键
+     * @param showImgBack
+     */
+    public void showBack(Boolean  showImgBack) {
+        mBack.setVisibility(showImgBack ? VISIBLE : GONE);
     }
 
 

@@ -5,6 +5,7 @@
     <attr name="iv_menu" format="reference"/>
     <attr name="tv_title" format="string"/>
     <attr name="tv_menu" format="string"/>
+    <attr name="show_iv_back" format="boolean"/>
     <attr name="show_tv_menu" format="boolean"/>
     <attr name="show_iv_menu" format="boolean"/>
     <attr name="show_line" format="boolean"/>
