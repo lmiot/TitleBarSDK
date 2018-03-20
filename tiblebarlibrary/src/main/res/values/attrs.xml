@@ -14,4 +14,13 @@
     <attr name="text_color_menu" format="color"/>
 
 </declare-styleable>
+
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorAccent" format="color" />
+    <attr name="colorPrimaryDark" format="color" />
+    <attr name="mainColor" format="color" />
+    <attr name="mainPrimaryTextColor" format="color" />
+    <attr name="mainPrimaryLightTextColor" format="color" />
+    <attr name="mainBgColor" format="color" />
+
 </resources>
